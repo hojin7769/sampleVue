@@ -4,7 +4,7 @@ import axios from "axios";
 
 function apiCall() {
   axios
-    .get("http://112.169.9.172:8080/api/hello")
+    .get("/api/hello")
     .then((res) => (apiData.value = res.data));
 }
 apiCall();

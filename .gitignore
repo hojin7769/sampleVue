@@ -160,3 +160,4 @@ $RECYCLE.BIN/
 *.lnk
 
 # End of https://www.toptal.com/developers/gitignore/api/vue,intellij+all,macos,windows
+/node_modules/
