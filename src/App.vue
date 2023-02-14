@@ -7,6 +7,11 @@ function test() {
     console.dir(res);
   });
 }
+function test2() {
+  axios.get("/api/test2").then((res) => {
+    console.dir(res);
+  });
+}
 </script>
 
 <template>
@@ -18,6 +23,7 @@ function test() {
       <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
     </a>
     <button @click="test()">shell 실행</button>
+    <button @click="test2()">shell 실행2</button>
   </div>
   <HelloWorld msg="Vite + Vue" />
 </template>
