@@ -10,8 +10,8 @@ function test() {
 function test2() {
   const params = {
     projectName: "web",
-    path: "http://svn.goodsentech.com:8080/svn/erp/Project_JAVA/MobileGDC/nhw2/Thursday/web",
-    root_path: "/home/svn/web",
+    path: "https://github.com/hojin7769/sampleVue.git",
+    root_path: "/home/git/web",
   };
   axios.post("/api/test2", params).then((res) => {
     console.dir(res);
