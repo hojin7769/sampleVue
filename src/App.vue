@@ -8,7 +8,12 @@ function test() {
   });
 }
 function test2() {
-  axios.get("/api/test2").then((res) => {
+  const params = {
+    projectName: "web",
+    path: "http://svn.goodsentech.com:8080/svn/erp/Project_JAVA/MobileGDC/nhw2/Thursday/web",
+    root_path: "/home/svn/web",
+  };
+  axios.post("/api/test2", params).then((res) => {
     console.dir(res);
   });
 }
