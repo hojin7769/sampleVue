@@ -12,6 +12,11 @@ function test2() {
     console.dir(res);
   });
 }
+function test3() {
+  axios.get("/api/test3").then((res) => {
+    console.dir(res);
+  });
+}
 </script>
 
 <template>
@@ -24,6 +29,7 @@ function test2() {
     </a>
     <button @click="test()">shell 실행</button>
     <button @click="test2()">shell 실행2</button>
+    <button @click="test3()">shell 실행3</button>
   </div>
   <HelloWorld msg="Vite + Vue" />
 </template>
